@@ -1,4 +1,4 @@
-name: FinalModel
+name: Models
 channels:
   - defaults
 dependencies:
