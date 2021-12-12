@@ -1,7 +1,7 @@
-name: FinalModel
+name: Models
 
 conda_env: conda.yaml
 
 entry_points:
   main:
-    command: "python MyFinalModel.py"
+    command: "python Models.py"
