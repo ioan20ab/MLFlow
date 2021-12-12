@@ -37,7 +37,7 @@ class FinalModel(mlflow.pyfunc.PythonModel):
         self.model = model
         return self
 
-    def predict(self, context, samples):
+    def predict(self, samples):
         return self.pipeline.predict(samples)
 
 model = FinalModel().fit(X_train, y_train)
