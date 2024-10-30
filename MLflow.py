@@ -1,27 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec  8 19:05:24 2021
 
 @author: Johnn
 """
 import pandas as pd
 import mlflow
 
-## NOTE: You can use Microsoft Azure Machine Learning Studio for experiment tracking. 
-# Follow assignment description and uncomment below for that (you might also need to 
+
 # pip azureml (pip install azureml-core):
 from azureml import core
 from azureml.core import Workspace
 ws = Workspace.from_config()
 mlflow.set_tracking_uri(ws.get_mlflow_tracking_uri())
 
-## NOTE: Optionally, you can use the public tracking server.  Do not use it 
-# for data you cannot afford to lose. See note in assignment text.
- # If you leave this line as a comment, mlflow will save the runs to your local filesystem.
+
 
 # mlflow.set_tracking_uri("http://training.itu.dk:5000/")
 
-# TODO: Set the experiment name
+# Set the experiment name
 mlflow.set_experiment("ML_flow")
 
 # Import some of the sklearn modules you are likely to use.
